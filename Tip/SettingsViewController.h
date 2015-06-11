@@ -10,4 +10,8 @@
 
 @interface SettingsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *defaultRateAmount;
+
+- (IBAction)defaultRateChanged:(id)sender;
+
 @end

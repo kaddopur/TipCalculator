@@ -114,11 +114,17 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="defaultRateChanged:" destination="gLF-0f-GCN" eventType="valueChanged" id="YGH-IG-HtV"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="5dh-ii-dLa"/>
+                    <connections>
+                        <outlet property="defaultRateAmount" destination="yNh-ny-5ug" id="vXX-r7-sOJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8C-J9-XYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

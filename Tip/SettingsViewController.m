@@ -16,8 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSLog(@"Settings");
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    long defaultRateIndex = [defaults integerForKey:@"default_rate_index"];
+    
+    self.defaultRateAmount.selectedSegmentIndex = defaultRateIndex;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,4 +38,9 @@
 }
 */
 
+- (IBAction)defaultRateChanged:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:self.defaultRateAmount.selectedSegmentIndex forKey:@"default_rate_index"];
+    [defaults synchronize];
+}
 @end

@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self resetRateDefault];
     [self displayTheKeyboard];
 }
 
@@ -48,6 +49,13 @@
 
 - (IBAction)tipRateChanged:(id)sender {
     [self renderResult];
+}
+
+- (void)resetRateDefault {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    long defaultRateIndex = [defaults integerForKey:@"default_rate_index"];
+    
+    self.tipRateAmount.selectedSegmentIndex = defaultRateIndex;
 }
 
 - (void)renderResult {
