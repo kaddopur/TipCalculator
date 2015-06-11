@@ -13,6 +13,8 @@
 		AEFA52FD1B29EE3800E55F33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFA52FC1B29EE3800E55F33 /* Images.xcassets */; };
 		AEFA53001B29EE3800E55F33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEFA52FE1B29EE3800E55F33 /* LaunchScreen.xib */; };
 		AEFA530C1B29EE3800E55F33 /* TipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFA530B1B29EE3800E55F33 /* TipTests.m */; };
+		AEFA53171B29F5F500E55F33 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFA53161B29F5F500E55F33 /* CalculatorViewController.m */; };
+		AEFA531A1B29F64800E55F33 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFA53191B29F64800E55F33 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		AEFA53051B29EE3800E55F33 /* TipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFA530A1B29EE3800E55F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFA530B1B29EE3800E55F33 /* TipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipTests.m; sourceTree = "<group>"; };
+		AEFA53151B29F5F500E55F33 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		AEFA53161B29F5F500E55F33 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		AEFA53181B29F64800E55F33 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		AEFA53191B29F64800E55F33 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 				AEFA52FC1B29EE3800E55F33 /* Images.xcassets */,
 				AEFA52FE1B29EE3800E55F33 /* LaunchScreen.xib */,
 				AEFA52EF1B29EE3800E55F33 /* Supporting Files */,
+				AEFA53151B29F5F500E55F33 /* CalculatorViewController.h */,
+				AEFA53161B29F5F500E55F33 /* CalculatorViewController.m */,
+				AEFA53181B29F64800E55F33 /* SettingsViewController.h */,
+				AEFA53191B29F64800E55F33 /* SettingsViewController.m */,
 			);
 			path = Tip;
 			sourceTree = "<group>";
@@ -216,6 +226,8 @@
 			files = (
 				AEFA52F51B29EE3800E55F33 /* AppDelegate.m in Sources */,
 				AEFA52F21B29EE3800E55F33 /* main.m in Sources */,
+				AEFA53171B29F5F500E55F33 /* CalculatorViewController.m in Sources */,
+				AEFA531A1B29F64800E55F33 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

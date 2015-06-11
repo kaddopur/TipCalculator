@@ -8,7 +8,7 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="CalculatorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -26,6 +26,9 @@
                                             <segment title="20%"/>
                                         </segments>
                                         <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="tipRateChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="BdA-2M-58r"/>
+                                        </connections>
                                     </segmentedControl>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" id="toJ-IH-o8H">
                                         <rect key="frame" x="16" y="104" width="288" height="63"/>
@@ -33,6 +36,9 @@
                                         <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="billAmountChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="ix7-HM-l1n"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.2470588235" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,6 +81,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="billAmount" destination="toJ-IH-o8H" id="tD2-fa-cEd"/>
+                        <outlet property="tipAmount" destination="nw3-iI-b1T" id="cjt-mX-aP8"/>
+                        <outlet property="tipRateAmount" destination="aKM-oy-UBR" id="mxa-o1-G0r"/>
+                        <outlet property="totalAmount" destination="lRk-45-Ey9" id="3cE-Nb-tsz"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="694" y="366"/>
@@ -82,7 +94,7 @@
         <!--Settings-->
         <scene sceneID="lLo-YA-1Nd">
             <objects>
-                <viewController id="gLF-0f-GCN" sceneMemberID="viewController">
+                <viewController id="gLF-0f-GCN" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hWc-79-TAT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
