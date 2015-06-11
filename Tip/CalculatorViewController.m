@@ -20,6 +20,11 @@
     [self displayTheKeyboard];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self resetRateDefault];
+    [self renderResult];
+}
+
 - (void)displayTheKeyboard {
     [self.billAmount becomeFirstResponder];
 }
@@ -65,8 +70,8 @@
     float tipValue = billValue * tipRateValue;
     float totalValue = billValue + tipValue;
     
-    self.tipAmount.text = [NSString stringWithFormat:@"%.2f", tipValue];
-    self.totalAmount.text = [NSString stringWithFormat:@"%.2f", totalValue];
+    self.tipAmount.text = [NSString stringWithFormat:@"$%.2f", tipValue];
+    self.totalAmount.text = [NSString stringWithFormat:@"$%.2f", totalValue];
 }
 
 @end
